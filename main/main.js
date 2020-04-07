@@ -52,7 +52,6 @@ function findItemName(itemBarCode){
               tempitemprice = item["price"];
               tempitemunit = item["unit"];
            
-      
          if (count>1){      //plural units
             tempitemunit = item["unit"] + "s";
           }
@@ -78,7 +77,6 @@ function findItemName(itemBarCode){
           results += "**********************";
           return results;
   }
-      
       
 
 function PrintReceipt(result) {
