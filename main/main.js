@@ -26,7 +26,7 @@ function findItemName(itemBarCode){
     }
 
 
-    function FormatReceipt(inputdata){
+    function Calculate(inputdata){
       let count = 1;
       input.sort();
       var results = "";
@@ -81,8 +81,8 @@ function findItemName(itemBarCode){
 
 function PrintReceipt(result) {
   let outputReceipt = "***<store earning no money>Receipt ***\n";
-  outputReceipt += Format(input);
+  outputReceipt += Calculate(input);
   return outputReceipt;
 
 }
-  console.log(formatReceipt());
+  console.log(PrintReceipt());
